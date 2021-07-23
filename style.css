@@ -1,0 +1,49 @@
+* {
+  /* outline: 2px solid red; */
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("Images/bgimage.jpg");
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.gridItem {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fecaca;
+  border: 2px solid black;
+  margin: 0.5rem 0.3rem;
+}
+.col1 .col2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.col1 div:hover {
+  opacity: 0.8;
+}
+.col2 div:hover {
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+}
