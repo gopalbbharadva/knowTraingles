@@ -95,9 +95,9 @@ section{
 
 input{
   max-width: 50px;
-  color: white;
+  color: black;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   border: 5px solid #E5E7EB;
   background-color: transparent;
 }
@@ -111,6 +111,7 @@ form input{
   margin: 1rem;
 }
 .label{
+  text-align: start;
   display: inline-block;
 }
 
@@ -138,6 +139,7 @@ p{
   background-color: var(--primary-color);
   text-align: center;
   padding: 1rem;
+  max-width: 400px;
   font-size: 1.4rem;
   font-weight: bold;
   margin-top: 4rem;
