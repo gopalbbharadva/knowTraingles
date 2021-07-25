@@ -1,17 +1,26 @@
 * {
   /* outline: 2px solid red; */
 }
-
+:root{
+  --primary-color:#7C3AED;
+}
+p{
+  text-align: center;
+}
 body {
-  font-family: sans-serif;
-  background-image: url("Images/bgimage.jpg");
+  background-image: url('Images/bgimage.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
 }
 .main-div {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
   width: 100%;
 }
 a {
@@ -19,17 +28,19 @@ a {
   font-size: 1.5rem;
 }
 .gridItem {
-  font-size: 1rem;
+
+  box-shadow: 3px 10px 10px rgb(0 0 0 / 0.2);
   font-weight: 600;
   padding: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  background-color: #fecaca;
-  border: 2px solid black;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  background-color: #DDD6FE;
+  border: 5px solid ;
   margin: 0.5rem 0.3rem;
 }
 .col1 .col2 {
@@ -46,4 +57,108 @@ a {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+/* area */
+.main{
+  margin: auto;
+  width: 100%;
+}
+
+.back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main a{
+  text-align: center;
+  border-radius: 1rem;
+  background-color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+section{
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+input{
+  max-width: 50px;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 5px solid #E5E7EB;
+  background-color: transparent;
+}
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+form input{
+  margin: 1rem;
+}
+.label{
+  display: inline-block;
+}
+
+.formula{
+  display: inline;
+}
+button{
+  background-color: var(--primary-color);
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+button:hover{
+  background-color: #EDE9FE;
+  color: var(--primary-color);
+}
+p{
+  font-size: 1.5rem;
+}
+.result{
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  border: 5px solid #5B21B6;
+  margin:3rem auto;
+}
+
+@media screen and (max-width:434px) {
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  h1{
+    text-align: center; 
+  }
+  form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
